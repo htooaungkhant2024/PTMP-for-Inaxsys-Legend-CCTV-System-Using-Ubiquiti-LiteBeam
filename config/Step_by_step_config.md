@@ -159,3 +159,27 @@ CCTV system integration
 Ubiquiti airMAX configuration
 
 Real-world field implementation
+
+                     ┌─────────────┐
+                     │     ISP     │
+                     └─────┬───────┘
+                           │
+                     ┌─────▼───────┐
+                     │   Router    │
+                     └─────┬───────┘
+                           │
+                 ┌─────────▼─────────┐
+                 │    PoE Switch      │
+                 ├─────────┬─────────┤
+                 │         │         │
+               NVR     IP Cameras  LiteBeam Master
+                                         │
+                    ─────────────────────┼────────────────────
+                                         │
+                     LiteBeam Left     LiteBeam Right
+                          │                 │
+                    ┌─────▼─────┐     ┌─────▼─────┐
+                    │ PoE Switch│     │ PoE Switch│
+                    ├─────┬─────┤     ├─────┬─────┤
+                IP Cameras       IP Cameras
+
